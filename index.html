@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Task Management App</title>
+</head>
+
+<body style="color: rgb(19, 13, 13); background-color: rgb(74, 66, 122);">
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-5 mb-5">
+            <strong> Task Management </strong>
+        </h1>
+    </div>
+        <div class="main row justify-content-lg-start">
+            <form action="" id="task-form" class="row justify-content-center mb-4" autocomplete="off">
+              
+                <div class="col-8 col-md-8 mb-3">
+                <label for="taskName">Task Name</label>
+                <input class="form-control" id="taskName" type="text" placeholder="Enter the Task Name">
+               </div>
+
+               <div class="col-8 col-md-8 mb-3">
+                <label for="taskDescription">Task Description</label>
+                <input class="form-control" id="taskDescription" type="text" placeholder="Describe the Task">
+               </div>
+
+               <div class="col-8 col-md-8 mb-3">
+                <label for="taskNumber">Task Number</label>
+                <input class="form-control" id="taskNumber" type="text" placeholder="Enter the Task Number">
+               </div>
+
+               <div class="col-8 col-md-8 ">
+                <input class="btn btn-success add-btn" type="submit">
+
+            
+
+            </form>
+            <div class="col-13 col-md-12 mt-5">
+                <table class="table table-striped-columns table-dark">
+                    <thread>
+                        <tr>
+                            <th>Task Name</th>
+                            <th>Task Description</th>
+                            <th>Task Number</th>
+                            <th>Actions</th>
+                            <th>Status</th>
+                        </tr>
+                    </thread>
+                    <tbody id="task-list">
+                        <tr>
+                            <td>Learn Angular</td>
+                            <td>Angular is the JS library</td>
+                            <td>3</td>
+                            <td>
+                                <a href="#" class="btn btn-outline-light btn-sm edit">Edit</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                                
+                                  
+                            </td>
+                            <td>
+                                <input type="checkbox" id="myCheckbox" name="myCheckbox">
+                                <label for="myCheckbox">My Checkbox</label>                  
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
